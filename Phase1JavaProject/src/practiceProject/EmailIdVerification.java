@@ -19,17 +19,17 @@ public class EmailIdVerification {
          String searchEmail = null;
          System.out.println("Enter the email to search");
          
-         try (Scanner sc = new Scanner(System.in)) {
+          Scanner sc = new Scanner(System.in) ;  
 			System.out.println("Enter email Id : ");
           searchEmail = sc.nextLine(); 
-		}
+	
              if(emailID.contains(searchEmail)){
           System.out.println("email ID " + searchEmail + " found");
       }
       else{
           System.out.println( "email ID " + searchEmail + " not found");
       }
- 
+             sc.close();
         
     }
 

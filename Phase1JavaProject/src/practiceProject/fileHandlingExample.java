@@ -1,6 +1,7 @@
 package practiceProject;
 
 import java.io.BufferedReader;
+
 import java.io.File;
 
 import java.io.FileNotFoundException;
@@ -71,7 +72,8 @@ public class fileHandlingExample {
             }
             //For appending the content
             else
-            {  f0 = new FileWriter(f,true);
+            {  
+            	f0 = new FileWriter(f,true);
                 System.out.println("Write 'stop' when you finish appending file ");
                 while(!(source=bf.readLine()).equalsIgnoreCase("stop")){
                     f0.append(source+ System.getProperty("line.separator"));

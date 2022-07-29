@@ -12,9 +12,9 @@ public class LongestIncresingSubsequence {
 		for (int i = 0; i < n; i++) {
 			LIS[i] = 1;
 			for (int j = 0; j < i; j++) {
-				if (a[i] > a[j] && LIS[i] < LIS[j] + 1) {
+				if (a[i] > a[j] && LIS[i] < LIS[j] + 1) 
 					LIS[i] = LIS[j] + 1;
-				}
+				
 			}
 			if (subsequence < LIS[i]) {
 				subsequence = LIS[i];

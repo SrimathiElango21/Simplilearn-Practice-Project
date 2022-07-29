@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Calculator {
 
 	public static void main(String[] args) {
-		try (Scanner sc = new Scanner(System.in)) {
+		   Scanner sc = new Scanner(System.in); 
 			
 			System.out.println("Enter a first number : ");
 			double a=sc.nextDouble();
@@ -15,7 +15,7 @@ public class Calculator {
 			char ch = sc.next().charAt(0);
 			
 			operation(a,b,ch);
-		}
+		sc.close();
 		
 	}
 	public static double operation(double a,float b,char ch) {
