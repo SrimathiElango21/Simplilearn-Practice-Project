@@ -1,9 +1,2 @@
-/**
- * 
- */
-/**
- * @author Srimathi
- *
- */
-module phase1JavaProject {
+module Phase1JavaProject {
 }
