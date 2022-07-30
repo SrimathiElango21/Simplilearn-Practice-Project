@@ -1,2 +1,2 @@
-module Phase1AssignmentVirtualkey {
+module VirtualKeyProject {
 }
